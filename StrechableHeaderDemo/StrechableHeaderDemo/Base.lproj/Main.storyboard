@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -54,12 +55,29 @@
                                     <segue destination="GR0-b8-zMn" kind="show" id="2ry-dQ-hp9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryq-IN-nbQ">
+                                <rect key="frame" x="16" y="99" width="343" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.34326127670000001" blue="0.30309289890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cQR-yT-wu8"/>
+                                </constraints>
+                                <state key="normal" title="Close Navigationbar"/>
+                                <state key="selected" title="Open Navigationbar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleNAVIBAR:" destination="BYZ-38-t0r" eventType="touchUpInside" id="57N-pZ-MLE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="NW2-H7-1kw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3xR-RS-r6u"/>
                             <constraint firstItem="NW2-H7-1kw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8DM-Ux-kjR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ryq-IN-nbQ" secondAttribute="trailing" id="9UU-sD-jlt"/>
                             <constraint firstAttribute="trailing" secondItem="KXS-eU-P59" secondAttribute="trailing" id="BAu-Qw-wdF"/>
+                            <constraint firstItem="ryq-IN-nbQ" firstAttribute="top" secondItem="x4b-Bk-6X6" secondAttribute="bottom" constant="35" id="DNO-Vl-mDX"/>
+                            <constraint firstItem="ryq-IN-nbQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FlO-75-wzM"/>
                             <constraint firstItem="KXS-eU-P59" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="U7f-Aw-560"/>
                             <constraint firstItem="NW2-H7-1kw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZZS-A2-8rq"/>
                             <constraint firstAttribute="trailing" secondItem="ug4-33-f2k" secondAttribute="trailing" id="b59-oy-fsJ"/>
@@ -73,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="631" y="90"/>
+            <point key="canvasLocation" x="629.60000000000002" y="89.505247376311857"/>
         </scene>
         <!--Sub View Controller-->
         <scene sceneID="JaV-a7-MCt">

@@ -23,6 +23,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initialization];
+    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -36,7 +37,7 @@ static NSString * const reuseIdentifier = @"Cell";
 -(void)initialization{
 //    self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     [self.collectionView setStrechHeader:[self header]
-                        withNaviBarHidden:self.navigationController.navigationBar.isHidden];
+                       withNaviBarHidden:self.navigationController.navigationBar.isHidden];
 }
 
 
@@ -51,7 +52,6 @@ static NSString * const reuseIdentifier = @"Cell";
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [self.collectionView updateStrechHeader];
-//    scrollView.adjustedContentInset
      NSLog(@"DDSD%f %f",scrollView.contentInset.top,scrollView.contentOffset.y);
 }
 

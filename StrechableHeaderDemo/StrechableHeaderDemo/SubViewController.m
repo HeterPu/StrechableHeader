@@ -10,7 +10,7 @@
 #import "CustomHeader.h"
 #import "UIScrollView+StrechableHeader.h"
 
-@interface SubViewController ()
+@interface SubViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property(nonatomic,strong) CustomHeader *header;
 
@@ -21,6 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initialization];
+    _scrollView.contentSize = CGSizeMake(100, 800);
+    _scrollView.delegate = self;
+    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
     // Do any additional setup after loading the view.
 }
 
@@ -31,14 +34,15 @@
 
 
 -(void)initialization{
-//    [self.scrollView setStrechHeader:[self header]];
+    [self.scrollView setStrechHeader:[self header]
+                       withNaviBarHidden:self.navigationController.navigationBar.isHidden];
 }
 
 
 -(CustomHeader *)header {
     if (!_header) {
         _header = [[[NSBundle mainBundle]loadNibNamed:@"CustomHeader" owner:nil options:nil]lastObject];
-        _header.frame = CGRectMake(0, 0, 0 ,100);
+        _header.frame = CGRectMake(0, 0, 0 ,150);
     }
     return  _header;
 }

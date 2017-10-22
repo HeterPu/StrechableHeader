@@ -25,5 +25,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)toggleNAVIBAR:(UIButton *)sender {
+    
+    if(self.navigationController.navigationBar.isHidden)
+    {
+        [sender setSelected:false];
+        [self.navigationController setNavigationBarHidden:false animated:true];
+    }
+    else
+    {
+        [sender setSelected:true];
+        [self.navigationController setNavigationBarHidden:true animated:true];
+    }
+}
 
 @end

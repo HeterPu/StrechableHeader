@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initialization];
+    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -34,7 +36,8 @@
 
 
 -(void)initialization{
-//    [self.tableView setStrechHeader:[self header]];
+    [self.tableView setStrechHeader:[self header]
+                       withNaviBarHidden:self.navigationController.navigationBar.isHidden];
 }
 
 
@@ -42,7 +45,7 @@
 -(CustomHeader *)header {
     if (!_header) {
         _header = [[[NSBundle mainBundle]loadNibNamed:@"CustomHeader" owner:nil options:nil]lastObject];
-        _header.frame = CGRectMake(0, 0, 0 ,100);
+        _header.frame = CGRectMake(0, 0, 0 ,150);
     }
     return  _header;
 }
