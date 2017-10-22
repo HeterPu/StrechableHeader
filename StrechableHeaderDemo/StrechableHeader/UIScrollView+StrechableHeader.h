@@ -14,9 +14,12 @@
 
 
 /**
- setStrechableHeader (设置可拉伸的头部)
- @param header  Most important property is height,strechheader will ignore other frame property  (要拉伸的头部view，最重要的为高度属性,其它的都不重要，属性设置在viewDidAppear之前。)
- @param isHidden NavigationBar isHiiden or not（导航栏是否隐藏）
+ Set Strechable Header.
+ (设置可拉伸的头部).
+ @param header  Most important property is height,strechheader will ignore other frame property.
+ (要拉伸的头部view，最重要的为高度属性,其它的都不重要，属性设置在viewDidAppear之前。)
+ @param isHidden NavigationBar isHiiden or not.
+ （导航栏是否隐藏）
  */
 -(void)setStrechHeader:(UIView *)header withNaviBarHidden:(BOOL)isHidden;
 
