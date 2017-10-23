@@ -1,6 +1,6 @@
 StrechableHeader
 ==============
-[![License MIT](https://github.com/HeterPu/StrechableHeader/blob/master/LICENSE)&nbsp;
+[![License MIT](https://img.shields.io/badge/MIT-red.svg)](https://github.com/HeterPu/StrechableHeader/blob/master/LICENSE)&nbsp;
 [![CocoaPods](https://img.shields.io/badge/pod-1.1.0-blue.svg)](https://cocoapods.org)&nbsp;
 [![Platform](https://img.shields.io/badge/platform-iOS-lightgray.svg)](https://cocoapods.org)&nbsp;
 [![Support](https://img.shields.io/badge/support-iOS%206%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
