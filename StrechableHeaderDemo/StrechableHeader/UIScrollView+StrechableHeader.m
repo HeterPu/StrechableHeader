@@ -49,7 +49,6 @@ static NSString *headerVIsHiddenKey = @"headerVIsHiddenKey";
     UIEdgeInsets inset = self.contentInset;
     inset.top = header.bounds.size.height;
     self.isHideNaviBar = @(isHidden);
-    [self getScrollViewContentInsetAdjustment];
     
     if([self isOverIos11]){
         if([self getScrollViewContentInsetAdjustment]){

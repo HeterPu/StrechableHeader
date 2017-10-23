@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "StrechableHeader"
-  s.version      = "1.1.0"
+  s.version      = "1.2.0"
   s.summary      = "A light strechable header for UIScrollview， UITableview ，UICollectionView."
 
   s.homepage     = "https://github.com/HeterPu/StrechableHeader"
