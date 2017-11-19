@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = false;
     [self initialization];
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
 

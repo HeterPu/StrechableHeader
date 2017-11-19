@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = false;
     [self initialization];
     _scrollView.contentSize = CGSizeMake(100, 800);
     _scrollView.delegate = self;
@@ -42,7 +43,7 @@
 -(CustomHeader *)header {
     if (!_header) {
         _header = [[[NSBundle mainBundle]loadNibNamed:@"CustomHeader" owner:nil options:nil]lastObject];
-        _header.frame = CGRectMake(0, 0, 0 ,150);
+        _header.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width ,150);
     }
     return  _header;
 }

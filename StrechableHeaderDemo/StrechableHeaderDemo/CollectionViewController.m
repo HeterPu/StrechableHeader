@@ -22,6 +22,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = false;
     [self initialization];
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
     // Uncomment the following line to preserve selection between presentations
