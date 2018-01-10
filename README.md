@@ -15,6 +15,7 @@ See `StrechableHeaderDemo/StrechableHeaderDemo.xcodeproj`
 
 <img src="https://raw.github.com/HeterPu/StrechableHeader/master/screenshots/1.PNG" width="760"><br/>
 <img src="https://raw.github.com/HeterPu/StrechableHeader/master//screenshots/2.PNG" width="760">
+<img src="https://raw.github.com/HeterPu/StrechableHeader/master//screenshots/3.gif" width="300">
 
 
 Installation
